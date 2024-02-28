@@ -37,10 +37,10 @@
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
                         bindings = <
-   AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(F)   AS(U)  AS(I)     AS(O)     AS(P)
-   AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(SQT)
-   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &kp LCTL  &kp RALT  AS(DOT)
-        &kp LGUI &mo 1 &kp SPACE     AS(RET) &mo 2  &kp BSPC
+   AS(SQT) AS(COMMA) AS(DOT) AS(P) AS(Y)     AS(F)   AS(G)  AS(C)     AS(R)     AS(L)
+   AS(A) AS(O) AS(E) AS(U) AS(I)     AS(D)   AS(H)  AS(T)     AS(N)     AS(S)
+   &kp COLON AS(Q) AS(J) AS(K) AS(X)     AS(B)   AS(M)  AS(W)  AS(V)  AS(Z)
+        &kp BSPC &mo 2 &kp LSHFT     &kp RSHFT &kp SPACE  &mo 1
                         >;
                 };
 
