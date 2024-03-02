@@ -9,23 +9,23 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define AS(keycode) &as LS(keycode) keycode
+//#define AS(keycode) &as LS(keycode) keycode
 
 / {
     chosen {
       zmk,matrix_transform = &five_column_transform;
     };
 
-    behaviors {
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
+//    behaviors {
+//        as: auto_shift {
+//            compatible = "zmk,behavior-hold-tap";
+//            #binding-cells = <2>;
+//            tapping_term_ms = <200>;
+//            quick_tap_ms = <0>;
+//            flavor = "tap-preferred";
+//            bindings = <&kp>, <&kp>;
+//        };
+//    };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -37,9 +37,9 @@
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         display-name = "Base";
                         bindings = <
-   AS(SQT) AS(COMMA) AS(DOT) AS(P) AS(Y)     AS(F)   AS(G)  AS(C)     AS(R)     AS(L)
-   AS(A) AS(O) AS(E) AS(U) AS(I)     AS(D)   AS(H)  AS(T)     AS(N)     AS(S)
-   &kp COLON AS(Q) AS(J) AS(K) AS(X)     AS(B)   AS(M)  AS(W)  AS(V)  AS(Z)
+   &kp SQT &kp COMMA &kp DOT &kp P    &kp Y     &kp F   &kp G  &kp C     &kp R     &kp L
+   &kp A &kp O &kp E &kp U &kp I     &kp D   &kp H  &kp T     &kp N     &kp S
+   &kp COLON &kp Q &kp J &kp K &kp X     &kp B   &kp M  &kp W  &kp V  &kp Z
         &kp BSPC &mo 2 &kp LSHFT     &kp RSHFT &kp SPACE  &mo 1
                         >;
                 };
@@ -55,7 +55,7 @@
    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &trans 
    &bt BT_CLR   &trans       &trans       &trans       &trans           &trans    &trans    &trans          &trans    &trans 
-                             &kp LGUI     &trans       &kp SPACE        AS(RET)   &kp ESC   &kp TAB
+                             &kp LGUI     &trans       &kp SPACE        &kp RSHFT   &kp ESC   &kp TAB
                         >;
                 };
 
@@ -68,10 +68,10 @@
                         display-name = "Raise";
                         bindings = <
 
-   AS(N1)    AS(N2)    AS(N3)    AS(N4)    AS(N5)        AS(N6)    AS(N7)    AS(N8)    AS(N9)   AS(N0)
-   AS(MINUS) AS(EQUAL) &kp LBRC  &kp LBKT  &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC  AS(FSLH) AS(BSLH)
-   AS(GRAVE) &trans    &trans    AS(COMMA) &kp COLON     &kp SEMI  AS(DOT)   &kp LCTRL &kp RALT &trans
-                       &kp LGUI  &kp ESC   &kp SPACE     AS(RET)   &trans    &kp TAB
+   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9   &kp N0
+   &kp MINUS &kp EQUAL &kp LBRC  &kp LBKT  &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC  &kp FSLH &kp BSLH
+   &kp GRAVE &trans    &trans    &kp COMMA &kp COLON     &kp SEMI  &kp DOT   &kp LCTRL &kp RALT &trans
+                       &kp LGUI  &kp ESC   &kp SPACE     &kp RET   &trans    &kp TAB
                         >;
                 };
         };
