@@ -68,10 +68,10 @@
 
             display-name = "Raise";
             bindings = <
-  &kp HOME   &kp PSCRN  &kp UP    &kp K_UNDO  &kp K_CUT      &kp ASTRK  &kp N7  &kp N8   &kp N9        &kp SLASH
-  &kp END    &kp LEFT   &kp DOWN  &kp RIGHT   &kp K_COPY     &kp PLUS   &kp N4  &kp N5   &kp N6        &kp MINUS
-  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LSHFT   &kp K_PASTE    &kp DOT    &kp N1  &kp N2   &kp NUMBER_3  &kp COMMA
-                        &kp LGUI  &kp ESC     &kp SPACE      &kp RET    &kp N0  &kp DOT
+  &kp HOME   &kp PSCRN  &kp UP    &kp K_UNDO  &kp K_CUT      &kp ASTRK  &kp N7  &kp N8         &kp N9        &kp SLASH
+  &kp END    &kp LEFT   &kp DOWN  &kp RIGHT   &kp K_COPY     &kp PLUS   &kp N4  &kp N5         &kp N6        &kp MINUS
+  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LSHFT   &kp K_PASTE    &kp DOT    &kp N1  &kp N2         &kp NUMBER_3  &kp COMMA
+                        &kp LGUI  &kp ESC     &none          &kp ENTER  &kp N0  &kp BACKSPACE
             >;
         };
 
@@ -80,7 +80,7 @@
   &kp F1     &kp F2     &kp F3    &kp F4    &kp F5      &kp F6           &kp F7    &kp F8    &kp F9     &kp F10
   &kp N1     &kp N2     &kp N3    &kp N4    &kp N5      &kp N6           &kp N7    &kp N8    &kp N9     &kp N0
   &kp LCTRL  &kp LSHFT  &kp LBKT  &kp LPAR  &kp LBRC    &kp RIGHT_BRACE  &kp RPAR  &kp RBKT  &kp RSHFT  &kp RCTRL
-                        &trans    &kp FSLH  &kp BSLH    &trans           &trans    &trans
+                        &kp PIPE  &kp FSLH  &kp BSLH    &none            &none     &none
             >;
 
             label = "Lower";
@@ -95,10 +95,10 @@
 
             display-name = "Tri";
             bindings = <
-  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none
-  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &trans
-  &bt BT_CLR    &none         &none         &none         &none           &none  &none  &none  &none  &none
-                              &none         &none         &none           &none  &none  &none
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none     &none     &none     &none
+  &none         &kp LBKT      &kp LPAR      &kp LBRC      &none           &none  &kp RBRC  &kp RPAR  &kp RBKT  &trans
+  &bt BT_CLR    &none         &none         &none         &none           &none  &none     &none     &none     &none
+                              &none         &none         &none           &none  &none     &none
             >;
         };
     };
