@@ -58,6 +58,23 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+
+        undo {
+            bindings = <&kp K_UNDO>;
+            key-positions = <29 28>;
+            layers = <0>;
+        };
+
+        grave_tilde {
+            bindings = <&kp GRAVE>;
+            key-positions = <0 10>;
+            layers = <0>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
     };
 
     keymap {
@@ -115,11 +132,20 @@
 
             display-name = "Tri";
             bindings = <
-  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none     &none     &none     &none
-  &none         &kp LBKT      &kp LPAR      &kp LBRC      &none           &none  &kp RBRC  &kp RPAR  &kp RBKT  &trans
-  &bt BT_CLR    &none         &none         &none         &none           &none  &none     &none     &none     &none
-                              &none         &none         &none           &none  &none     &none
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &none  &none     &none     &none     &none
+  &none         &kp LBKT      &kp LPAR      &kp LBRC          &none           &none  &kp RBRC  &kp RPAR  &kp RBKT  &trans
+  &bt BT_CLR    &none         &none         &kp K_PLAY_PAUSE  &none           &none  &none     &none     &none     &none
+                              &kp K_MUTE    &kp C_VOL_DN      &kp C_VOL_UP    &none  &none     &none
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Layer_Tri {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
