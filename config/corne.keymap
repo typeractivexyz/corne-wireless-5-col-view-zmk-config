@@ -82,6 +82,8 @@
   &kp LCTRL  &kp LSHFT  &kp LBKT  &kp LPAR  &kp LBRC    &kp RIGHT_BRACE  &kp RPAR  &kp RBKT  &kp RSHFT  &kp RCTRL
                         &trans    &kp FSLH  &kp BSLH    &trans           &trans    &trans
             >;
+
+            label = "Lower";
         };
 
         settings {
@@ -91,7 +93,7 @@
             // | BTCLR |     |     |     |     |     |     |     |     |     |     |
             //               | GUI |     | SPC |     | ENT | ESC | TAB |
 
-            display-name = "Lower";
+            display-name = "Tri";
             bindings = <
   &none         &none         &none         &none         &none           &none  &none  &none  &none  &none
   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &trans
