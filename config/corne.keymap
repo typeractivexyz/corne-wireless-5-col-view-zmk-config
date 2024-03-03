@@ -30,13 +30,33 @@
         Bootloader_Left {
             bindings = <&bootloader>;
             key-positions = <0 1 32>;
-            layers = <3>;
+            layers = <3 1 2>;
         };
 
         Bootloader_Right {
             bindings = <&bootloader>;
             key-positions = <8 9 33>;
-            layers = <3>;
+            layers = <3 1 2>;
+        };
+
+        cut {
+            bindings = <&kp K_CUT>;
+            key-positions = <21 22>;
+        };
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <22 23>;
+        };
+
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <23 24>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
     };
 
@@ -68,10 +88,10 @@
 
             display-name = "Raise";
             bindings = <
-  &kp HOME   &kp PSCRN  &kp UP    &kp K_UNDO  &kp K_CUT      &kp ASTRK  &kp N7  &kp N8         &kp N9        &kp SLASH
-  &kp END    &kp LEFT   &kp DOWN  &kp RIGHT   &kp K_COPY     &kp PLUS   &kp N4  &kp N5         &kp N6        &kp MINUS
-  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LSHFT   &kp K_PASTE    &kp DOT    &kp N1  &mt LALT N2    &mt LSHFT N3  &mt LCTRL COMMA
-                        &kp LGUI  &kp ESC     &none          &kp ENTER  &kp N0  &kp BACKSPACE
+  &kp HOME   &kp PSCRN  &kp UP     &kp K_UNDO  &kp K_CUT      &kp ASTRK  &kp N7  &kp N8         &kp N9        &kp SLASH
+  &kp END    &kp LEFT   &kp DOWN   &kp RIGHT   &kp K_COPY     &kp PLUS   &kp N4  &kp N5         &kp N6        &kp MINUS
+  &kp LCTRL  &kp LSHFT  &kp LALT   &kp LSHFT   &kp K_PASTE    &kp DOT    &kp N1  &mt LALT N2    &mt LSHFT N3  &mt LCTRL COMMA
+                        &kp GRAVE  &kp ESC     &none          &kp ENTER  &kp N0  &kp BACKSPACE
             >;
         };
 
