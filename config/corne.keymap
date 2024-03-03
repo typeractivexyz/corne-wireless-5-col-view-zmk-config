@@ -70,7 +70,7 @@
             bindings = <
   &kp HOME   &kp PSCRN  &kp UP    &kp K_UNDO  &kp K_CUT      &kp ASTRK  &kp N7  &kp N8         &kp N9        &kp SLASH
   &kp END    &kp LEFT   &kp DOWN  &kp RIGHT   &kp K_COPY     &kp PLUS   &kp N4  &kp N5         &kp N6        &kp MINUS
-  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LSHFT   &kp K_PASTE    &kp DOT    &kp N1  &kp N2         &kp NUMBER_3  &kp COMMA
+  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LSHFT   &kp K_PASTE    &kp DOT    &kp N1  &mt LALT N2    &mt LSHFT N3  &mt LCTRL COMMA
                         &kp LGUI  &kp ESC     &none          &kp ENTER  &kp N0  &kp BACKSPACE
             >;
         };
