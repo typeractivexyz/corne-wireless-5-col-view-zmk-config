@@ -146,10 +146,10 @@
 
         firmware {
             bindings = <
-  &none  &none  &none  &none  &none          &none        &none  &none  &none  &none
-  &none  &none  &none  &none  &bootloader    &bootloader  &none  &none  &none  &none
-  &none  &none  &none  &none  &none          &none        &none  &none  &none  &none
-                &none  &none  &none          &none        &none  &none
+  &none   &none  &none  &none  &none          &none        &none  &none  &none  &none
+  &tog 0  &none  &none  &none  &bootloader    &bootloader  &none  &none  &none  &tog 0
+  &none   &none  &none  &none  &none          &none        &none  &none  &none  &none
+                 &none  &none  &none          &none        &none  &none
             >;
 
             label = "firmware";
