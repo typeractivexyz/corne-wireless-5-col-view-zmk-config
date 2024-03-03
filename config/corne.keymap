@@ -24,6 +24,22 @@
     //        };
     //    };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Bootloader_Left {
+            bindings = <&bootloader>;
+            key-positions = <0 1 32>;
+            layers = <3>;
+        };
+
+        Bootloader_Right {
+            bindings = <&bootloader>;
+            key-positions = <8 9 33>;
+            layers = <3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
