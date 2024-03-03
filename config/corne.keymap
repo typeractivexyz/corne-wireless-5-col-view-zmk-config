@@ -94,7 +94,7 @@
 
             display-name = "Base";
             bindings = <
-  &kp SQT              &kp COMMA     &kp DOT       &kp P            &kp Y                   &kp F             &kp G        &kp C        &kp R        &kp L
+  &lt 3 SQT            &kp COMMA     &kp DOT       &kp P            &kp Y                   &kp F             &kp G        &kp C        &kp R        &kp L
   &kp A                &kp O         &kp E         &kp U            &kp I                   &kp D             &kp H        &kp T        &kp N        &kp S
   &mt LCTRL SEMICOLON  &mt LSHIFT Q  &mt LALT J    &kp K            &kp X                   &kp B             &kp M        &kp W        &mt RSHFT V  &mt RCTRL Z
                                      &mt LWIN TAB  &lt 1 BACKSPACE  &mt LSHIFT BACKSPACE    &mt RSHIFT ENTER  &lt 2 SPACE  &lt 3 MINUS
@@ -138,10 +138,21 @@
             display-name = "Tri";
             bindings = <
   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &none  &none     &none     &none     &none
-  &none         &kp LBKT      &kp LPAR      &kp LBRC          &none           &none  &kp RBRC  &kp RPAR  &kp RBKT  &trans
+  &tog 4        &kp LBKT      &kp LPAR      &kp LBRC          &none           &none  &kp RBRC  &kp RPAR  &kp RBKT  &tog 4
   &bt BT_CLR    &none         &none         &kp K_PLAY_PAUSE  &none           &none  &none     &none     &none     &none
                               &kp K_MUTE    &kp C_VOL_DN      &kp C_VOL_UP    &none  &none     &none
             >;
+        };
+
+        firmware {
+            bindings = <
+  &none  &none  &none  &none  &none          &none        &none  &none  &none  &none
+  &none  &none  &none  &none  &bootloader    &bootloader  &none  &none  &none  &none
+  &none  &none  &none  &none  &none          &none        &none  &none  &none  &none
+                &none  &none  &none          &none        &none  &none
+            >;
+
+            label = "firmware";
         };
     };
 
