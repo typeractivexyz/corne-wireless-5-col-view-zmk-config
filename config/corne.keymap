@@ -143,7 +143,7 @@
             display-name = "Tri";
             bindings = <
   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &none  &none     &none     &none     &none
-  &tog 4        &kp LBKT      &kp LPAR      &kp LBRC          &none           &none  &kp RBRC  &kp RPAR  &kp RBKT  &tog 4
+  &mo 4         &kp LBKT      &kp LPAR      &kp LBRC          &none           &none  &kp RBRC  &kp RPAR  &kp RBKT  &mo 4
   &bt BT_CLR    &none         &none         &kp C_PLAY_PAUSE  &none           &none  &none     &none     &none     &none
                               &kp C_MUTE    &kp C_VOL_DN      &kp C_VOL_UP    &none  &none     &none
             >;
@@ -151,10 +151,10 @@
 
         firmware {
             bindings = <
-  &none   &none  &none  &none  &none          &none        &none  &none  &none  &none
-  &tog 0  &none  &none  &none  &bootloader    &bootloader  &none  &none  &none  &tog 0
-  &none   &none  &none  &none  &none          &none        &none  &none  &none  &none
-                 &none  &none  &none          &none        &none  &none
+  &none  &none  &none  &none  &none          &none        &none  &none  &none  &none
+  &none  &none  &none  &none  &bootloader    &bootloader  &none  &none  &none  &none
+  &none  &none  &none  &none  &none          &none        &none  &none  &none  &none
+                &none  &none  &none          &none        &none  &none
             >;
 
             label = "firmware";
